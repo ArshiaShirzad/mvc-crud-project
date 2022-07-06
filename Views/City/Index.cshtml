@@ -1,0 +1,32 @@
+﻿@model Education.Models.CityViewModel;
+
+
+<table>
+    This is the List of Cities
+    @foreach (var item in Model.Cities)
+    {
+        <tr>
+
+            <td>
+                @item.ID 
+            </td>
+            <td>
+                @item.City_Name
+            </td>
+           <td>
+               @item.ProvinceID
+           </td>
+            <td>
+                <a href="/City/Delete?ID=@item.ID">
+                    Delete
+                </a>
+            </td>
+            <td>
+                <a href="/City/Update?ID=@item.ID">
+                    Update
+                </a>
+            </td>
+        </tr>
+    }
+
+</table>

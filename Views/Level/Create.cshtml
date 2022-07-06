@@ -1,0 +1,12 @@
+﻿@model Education.Models.LevelViewModel;
+
+@using (Html.BeginForm()) {
+
+    <h2 class="text-3xl">
+        Enter Your Degree
+    </h2>
+    @Html.TextBoxFor(x=> x.Level_Degree)
+    <input type="submit" value="Save" />
+
+}
+@Html.ActionLink("List of Degrees","Index")

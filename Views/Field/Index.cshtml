@@ -1,0 +1,29 @@
+﻿@model Education.Models.FieldViewModel;
+
+<h1>
+    List Of Fields
+</h1>
+<table>
+    @foreach(var item in Model.Fields)
+            {
+                <tr>
+                   <td>
+                       @item.ID
+                   </td>
+                    <td>
+                        Field Name=@item.Field_Name
+                    </td>
+                    <td>
+                        <a href="/Field/Delete?ID=@item.ID">
+                            Delete
+                        </a>
+                        
+                    </td>
+                    <td>
+                        <a href="/Field/Update?ID=@item.ID">
+                            Update
+                        </a>
+                    </td>
+                </tr>
+            }
+</table>

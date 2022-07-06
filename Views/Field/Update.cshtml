@@ -1,0 +1,11 @@
+﻿@model Education.Models.FieldViewModel;
+
+@using (Html.BeginForm())
+ {
+    @Html.HiddenFor(x => x.ID);
+    @Html.TextBoxFor(x=> x.Field_Name);
+    <input type="submit" value="Update" />
+
+
+ }
+@Html.ActionLink("List of Fields ", "Index");

@@ -1,0 +1,8 @@
+﻿@model Education.Models.ProvinceViewModel;
+
+@using (Html.BeginForm()) {
+    @Html.HiddenFor(x=> x.ID)
+    @Html.TextBoxFor(x=> x.Province_Name)
+    <input type="submit" value="Update"/>
+}
+@Html.ActionLink("back to List","Index")

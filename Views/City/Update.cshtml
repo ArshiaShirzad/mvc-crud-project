@@ -1,0 +1,14 @@
+﻿@model Education.Models.CityViewModel;
+
+
+
+@using (Html.BeginForm())
+{
+
+    @Html.HiddenFor(x => x.ID)
+    @Html.TextBoxFor(x => x.City_Name)
+
+    @Html.DropDownListFor(m => m.ProvinceID, Model.Provinces)
+    <input type="submit" value="Update" />
+}
+@Html.ActionLink("Click Here To See The List", "Index")

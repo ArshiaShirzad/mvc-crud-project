@@ -1,0 +1,52 @@
+﻿@model Education.Models.StudentViewModel;
+
+
+<h2>
+    This Is The List Of Students And Their Information
+</h2>
+
+<table>
+    @foreach (var Item in Model.Students)
+            {
+    <tr>
+        <td>
+            <p>Student ID=</p> @Item.ID
+        </td>
+        <td>
+            <p>Student Name=</p> @Item.Student_Name
+        </td>
+        <td>
+            <p>Student LAstName=</p>  @Item.Student_LastName
+        </td>
+        <td>
+            <p>Student Gender=</p> @Item.Student_Gender
+        </td>
+        <td>
+            <p>Student Father Name=</p>  @Item.Student_FatherName
+        </td>
+        <td>
+            <p>kode meli=</p>   @Item.Student_ValidateNumber
+        </td>
+        <td>
+            <p>Student Number=</p>  @Item.Student_Number
+        </td>
+        <td>
+            <p>student address=</p>   @Item.Student_Address
+        </td>
+        <td>
+            <p>City code=</p>  @Item.CityID
+        </td>
+        <td>
+            <a href="/Student/Delete?ID=@Item.ID">
+                Delete
+            </a>
+        </td>
+        <td>
+            <a href="/Student/Update?ID=@Item.ID">
+                Update
+            </a>
+        </td>
+    </tr>
+            }
+</table>
+@Html.ActionLink("Enter New Student","Create")

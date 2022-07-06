@@ -1,0 +1,11 @@
+﻿@model Education.Models.FieldViewModel;
+
+
+
+@using (Html.BeginForm()) {
+    <h2>Field Name</h2>
+    @Html.TextBoxFor(x=> x.Field_Name)
+    <input type="submit" value="Save" />
+
+}
+@Html.ActionLink("List Of Fields","Index")

@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "/Users/arshia/.dotnet/store/|arch|/|tfm|",
+      "/Users/arshia/.nuget/packages"
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+﻿@model Education.Models.StudentViewModel;
+
+
+@using (Html.BeginForm())
+{
+    <h2>Student Name</h2>
+    @Html.TextBoxFor(m => m.Student_Name)
+    <h2>Student Last Name</h2>
+    @Html.TextBoxFor(m => m.Student_LastName)
+    <h2>Student Gender</h2>
+    @Html.TextBoxFor(m => m.Student_Gender)
+    <h2>Student Father Name</h2>
+    @Html.TextBoxFor(m => m.Student_FatherName)
+    <h2>Student Address</h2>
+    @Html.TextBoxFor(m => m.Student_Address)
+    @Html.DropDownListFor(m => m.CityID, Model.Cities)
+    <h2>Student Phone Number</h2>
+    @Html.TextBoxFor(m => m.Student_Number)
+    <h2>Student Validation Number</h2>
+    @Html.TextBoxFor(m => m.Student_ValidateNumber)
+    <input type="submit" value="Save Information">
+}
+@Html.ActionLink("List Of Students","Index")

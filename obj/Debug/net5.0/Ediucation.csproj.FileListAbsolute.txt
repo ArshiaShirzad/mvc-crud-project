@@ -1,0 +1,8 @@
+/Users/arshia/Projects/Ediucation/obj/Debug/net5.0/Ediucation.csproj.AssemblyReference.cache
+/Users/arshia/Projects/Ediucation/obj/Debug/net5.0/Ediucation.GeneratedMSBuildEditorConfig.editorconfig
+/Users/arshia/Projects/Ediucation/obj/Debug/net5.0/Ediucation.AssemblyInfoInputs.cache
+/Users/arshia/Projects/Ediucation/obj/Debug/net5.0/Ediucation.AssemblyInfo.cs
+/Users/arshia/Projects/Ediucation/obj/Debug/net5.0/Ediucation.csproj.CoreCompileInputs.cache
+/Users/arshia/Projects/Ediucation/obj/Debug/net5.0/Ediucation.MvcApplicationPartsAssemblyInfo.cache
+/Users/arshia/Projects/Ediucation/obj/Debug/net5.0/Ediucation.RazorAssemblyInfo.cache
+/Users/arshia/Projects/Ediucation/obj/Debug/net5.0/Ediucation.RazorAssemblyInfo.cs

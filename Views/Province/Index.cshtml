@@ -1,0 +1,28 @@
+﻿@model Education.Models.ProvinceViewModel;
+
+<table>
+    @foreach (var item in Model.Provinces)
+    {
+
+        <tr>
+            <td>
+                @item.ID
+            </td>
+            <td>
+                @item.Province_Name
+            </td>
+            <td>
+                <a href="/Province/Update?ID=@item.ID">
+                    Update
+                </a>
+            </td>
+            <td>
+                <a href="/Province/Delete?ID=@item.ID">
+                    Delete
+                </a>
+            </td>
+        </tr>
+
+    }
+</table>
+@Html.ActionLink("enter new Province","Create")

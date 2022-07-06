@@ -1,0 +1,17 @@
+﻿@model Education.Models.ProvinceViewModel;
+@using (Html.BeginForm())
+{
+    <h2>Enter The Province Name</h2>
+    @Html.TextBoxFor(m => m.Province_Name)
+    <input type="submit" value="save" />
+}
+@Html.ActionLink("LIST OF PROVINCE", "Index")
+
+<p>The Time Is @DateTime.Now</p>
+@{
+    var MyMessage = "Hello Arshia";
+    var DayOfTheWeek = DateTime.Now.DayOfWeek;
+
+}
+
+<p>my message to you is @MyMessage in @DayOfTheWeek </p>

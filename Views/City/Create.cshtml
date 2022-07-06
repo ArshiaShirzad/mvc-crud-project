@@ -1,0 +1,10 @@
+﻿@model Education.Models.CityViewModel;
+@using (Html.BeginForm())
+{
+    @Html.TextBoxFor(m => m.City_Name)
+    <input type="submit" value="save" />
+
+    @Html.DropDownListFor(m => m.ProvinceID, Model.Provinces)
+}
+@Html.ActionLink("LIST OF Cities", "Index")
+
